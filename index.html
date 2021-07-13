@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Warrior</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2 id="ogre-words">Haha You Cannot Destroy <span id="word-shake">Me!</span> </h2>
+        <h2 id="ogre-defeat">Oh No! I Have Been Destroyed!</h2>
+        <p id="ogre"><span class="float-fire">🔥</span>👹<span class="float-fire">🔥</span></p>
+        <p id="dead">☠️</p>
+
+        <!-- player containers -->
+        <div class="players">
+            <div id="player1">
+                <h1>Damage:
+                    <span id="player1Scoreboard" class="damage" id="axe">0</span>
+                </h1>
+                <div id="player1Dice" class="weapon-box active">-</div>
+            </div>
+
+            <div id="player2">
+                <h1>Damage:
+                    <span id="player2Scoreboard" class="damage">0</span>
+                </h1>
+                <div id="player2Dice" class="weapon-box">-</div>
+
+            </div>
+        </div>
+        <!-- //players containers -->
+
+        <!-- weapons -->
+        <div id="weapon-container">
+            <img src="https://www.svgrepo.com/show/152773/sword.svg" alt="sword" class="weapon" id="sword">
+            <img src="https://www.svgrepo.com/show/51050/open-book.svg" alt="book" class="weapon" id="book">
+            <img src="https://www.svgrepo.com/show/159003/battle-axe.svg" alt="axe" class="weapon" id="axe">
+            <img src="https://www.svgrepo.com/show/37733/arm-muscles-silhouette.svg" alt="arm" class="weapon" id="arm">
+        </div>
+        <!-- //weapons -->
+
+        <h1 id="message">Warrior 1 Claim A Weapon</h1>
+        <h2 id="choose">Choose Wisely...</h2>
+        <button id="dmgBtn">Attack💥</button>
+        <button id="resetBtn"><strong>KILLTASTIC 👊</strong></button>
+    </div>
+    <audio autoplay loop id="playAudio">
+        <source src="songs/battle-music.mp3" type="audio/mpeg">
+    </audio>
+    <script src="script.js"></script>
+</body>
+
+</html>

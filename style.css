@@ -1,0 +1,195 @@
+* { 
+    --color-1: #a8e6cf;
+    --color-2: #dcedc1; 
+    --color-3: #ffd3b6; 
+    --color-4: #ffaaa5; 
+    --color-5: #ff8b94;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding-top: 50px;
+    background-image: url(images/bg-map.jpg);
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    color: black;
+}
+
+.container {
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: -2px 6px 18px 3px rgba(0,0,0,0.75);
+    padding: 50px;
+    padding-top: 30px;
+}
+
+.players {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.weapon-box {
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: tan;
+    margin: 20px auto 0;
+    font-size: 80px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+
+.chosen-weapon {
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: var(--color-3);
+    margin: 20px auto 0;
+    font-size: 80px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    color: #fff;
+    padding: 20px 30px;
+    font-size: 20px;
+    margin: 40px auto;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+#dmgBtn {
+    background-color: grey;
+}
+
+#resetBtn {
+    background-color: grey;
+    color: black;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:active{
+    opacity: 0.8;
+}
+
+#resetBtn {
+    display: none;
+}
+
+.active {
+    box-shadow: -2px 6px 20px 3px rgba(0, 0, 0, 0.75);
+}
+
+
+#weapon-container{
+    height: 45px;
+    margin-top: 40px;
+    
+}
+
+.weapon{
+    width: 40px;
+    border: 1px solid black;
+    background-color: tan;
+    padding: 2px;
+    margin: 1px;
+    
+}
+
+.weapon:hover{
+    opacity: 0.4;
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+#message {
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-size: 20px;
+    color: green;
+}
+
+#ogre, #dead{
+    font-size: 100px;
+    margin-bottom: 40px;
+}
+
+#dead {
+    display: none;
+}
+
+.damage {
+    color: red;
+    text-decoration: underline;
+    text-decoration-color: rgb(77, 3, 3);
+}
+
+
+#ogre-words{
+    animation: fadeIn 4s;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+#word-shake {
+    animation: shake .3s infinite, fadeIn 5s;
+    color: red;
+    display: inline-block;
+}
+
+@keyframes shake {
+	0% {
+		transform: translate(0, 0px);
+	}
+	50% {
+		transform: translate(-5px, 0);
+	}
+	100% {
+		transform: translate(5px, 5px, 0);
+	}
+}
+.float-fire {
+    animation: float 2s ease-in infinite;
+    display: inline-block;
+}
+
+@keyframes float {
+	0% {
+		transform: translate(0, 0px);
+	}
+	50% {
+		transform: translate(0, -5px);
+	}
+	100% {
+		transform: translate(0, 5px, 0);
+	}
+}
+
+#ogre-defeat {
+    display: none;
+    color: rgb(151, 24, 24);
+    border: 1px solid red;
+}
+
+#choose{
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
